@@ -27,10 +27,6 @@ factcheck/
 ├── .idea/ # IDE configs (ignore in GitHub)
 ├── .venv/ # Local virtual environment (ignore in GitHub)
 
-yaml
-Copy code
-
----
 
 ## 🛠️ Installation
 
@@ -40,33 +36,23 @@ git clone https://github.com/your-username/factcheck.git
 cd factcheck
 Create and activate a virtual environment:
 
-bash
-Copy code
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 Install dependencies:
 
-bash
-Copy code
 pip install -r req.txt
 Or if you are using Poetry:
 
-bash
-Copy code
 poetry install
 ▶️ Usage
 CLI (Command Line)
 Run the main fact-checker:
 
-bash
-Copy code
 python -m factcheck.main "Your text or URL here"
 Streamlit Web App
 Launch the web interface:
 
-bash
-Copy code
 streamlit run factcheck/src/factcheck/app.py
 📊 Example
 Input:
@@ -95,13 +81,4 @@ flowchart TD
     
     F --> G[Generate Report]
     G --> H[Output Verdict + Explanation]
-
-📜 License
-This project is licensed under the MIT License.
-
-yaml
-Copy code
-
----
-
-⚡ This version includes the **theory (project purpose + features)** along with the **practical usage guide**.  
+  
